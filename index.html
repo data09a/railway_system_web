@@ -2,10 +2,14 @@
 <html>
 
 <head>
-	<title></title>
+	<title>Railway System</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+	<div id="headerBox">
 	<div id="header">
 		<div id="logo">
 			<img src="images/logo.jpg">
@@ -18,8 +22,8 @@
 			</div>
 			<input id="submit" type="image" src="images/submit.png" alt="Submit">
 		    	
-		    <div id="secondR">
-		    	<div id="login">
+		    <div id="profile">
+		    	<div id="myInfo">
 		    
 		    		<p>My Profile |</p>
 		    		<ul>
@@ -41,25 +45,35 @@
 					</ul>				
 		    	</div>
 
-		       	<div id="reg">Login Register</div>
+		       	<div id="login">Login Register</div>
 
 		    </div>
 		</div>	
 	</div>
-
-	<div id="nav">
-		<ul id="navUl">
-			<li class="navLi" style="background-color: #3685EC;">Home</li>
-			<li class="navLi">Ticket</li>
-			<li class="navLi">Group</li>		
-			<li class="navLi">Membership</li>
-			<li class="navLi">Station Service</li>
-			<li class="navLi">Business Class</li>
-			<li class="navLi">Trip Guide</li>
-			<li class="navLi">Information</li>
-		</ul>
 	</div>
-	<div id="banner"> Sliding Picture</div>
+    
+    <div id="navBar">
+		<ul class="nav">
+  			<li style="background-color: #3685EC;">
+  				<a href="index.html">Home</a>
+  			</li>
+  			<li style="text-decoration:none;color:white;">
+  				<a href="oneway.html">Ticket</a>
+  			<li><a href="/group/">Group</a></li>    
+  			<li><a href="/membership/">Membership</a></li>
+  			<li>
+    			<a href="/stationService/">Station Service</a>
+  			</li>
+  			<li><a href="/businessClass/">Business Class</a></li>
+  			<li><a href="/tripGuide/">Trip Guide</a></li>
+  			<li><a href="/information/">Information</a></li>
+  		</ul>
+	</div>
+	
+    <div id="slidingBox">
+	<div id="sliding"> 
+	</div>
+	</div>
 	<div id="toolbox">
 		<div class="item">	
 			<div class="itemImage" style="background-position-y:-40px"></div>
@@ -148,7 +162,32 @@
 	</div>
 
 
-	<div id="news">News</div>
+	<div id="news">
+		<div class="newsTab">
+	  	<ul class="newsHead">
+	  		<li class="newsTitle" style="background: #3B99FC;color: #fff;">
+	  		News
+	  	    </li>
+	  		<li class="newsTitle" style="background: #efeff4;color: #666;margin-left:6px">General Information
+	  		</li>
+	  		<li class="newsTitle" style="background: #efeff4;color: #666;float:right">
+	  		Credit Information
+	  		</li>
+	  	</ul>
+	 <!--  	<ul class=newsShortcut>
+ 			<li>
+				<span id="newsShortcut">中国铁路广州局集团有限公司关于2019年9月20日至9月27日增开部分旅客列车的公告
+  				</span>
+ 			 <span id="date">2019-09-23</span>
+			</li>
+
+ 		</ul> -->
+
+
+	  	
+	  	
+	  	<div class="newsBody">
+	</div>
 
 
 	<div id="otherLink">

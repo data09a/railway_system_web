@@ -1,0 +1,112 @@
+#onewayContent{
+	border:1px solid blue;
+	width:1190px;
+	height:620px;
+	margin:0 auto;
+	margin-top:10px;
+
+}
+
+#searchLocation{
+	border:1px solid blue;
+	height:74px;
+	width:100%;
+	margin:0 auto;
+	margin-top:10px;
+	display: inline-flex;
+
+
+}
+
+.locationLeft{
+	border: 1px solid black;
+	height:48px;
+	width:10%;
+	float:left;
+	margin-top: 1%;
+	
+
+}
+
+.locationLeft ul{
+	padding:0px;
+	margin:0 auto;
+	margin-top:4%;
+}
+
+.locationLeft li{
+	list-style: none;
+	text-align: left;
+
+}
+
+.locationInfoarea{
+	border:1px solid black;
+	height:50px;
+	width:801px;
+	margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+
+#locationarea{
+	width:80%;
+	height:55%;
+}
+
+.locationInfoarea ul{
+	margin:0 auto;
+}
+.locationInfoarea li{
+	border:1px solid black;
+	width:23%;
+	list-style: none;
+    height: 48px;
+    float: left;
+}
+
+.locationRight{
+	border:1px solid black;
+	height:58px;
+	width:25%;
+	margin-top: 0.5%;
+}
+
+.locationRight li{
+	list-style: none;
+
+}
+
+.left-button{
+	width: 30%;
+    float: left;
+    padding: 0px;
+    display: inline-block;
+}
+
+.right-button{
+	margin-top:6px;
+}
+}
+#scheduleDate{
+	border:1px solid blue;
+	height:81px;
+	margin:0 auto;
+	margin-top:10px;
+	
+}
+
+#searchCheckbox{
+	border:1px solid blue;
+	height:35px;
+	margin:0 auto;
+	
+}
+
+#scheduleNav{
+	border:1px solid blue;
+	width:1188px;
+	height:35px; 
+	margin:0 auto;
+
+}
