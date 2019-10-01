@@ -1,0 +1,120 @@
+.center-box{
+/*	border:1px solid black;
+*/	width:1190px;
+	height:692px;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+.center-menu{
+/*	border:1px solid blue;
+*/	width:130px;
+	height:692px;
+	float:left;
+	margin-top:0px;
+
+}
+
+.center-main{
+	width:1010px;
+	height:692px;
+	float:right;	
+	border: 1px solid #DEDEDE;
+    border-top: 2px solid #3B99FC;
+
+}
+
+.welcome-title{
+/*	border:1px solid black;
+*/	width:968px;
+	height:65px;
+	background-image:url(../images/noticepic.png);
+	background-repeat: no-repeat;
+	background-size:80px;
+	margin:0 auto;
+	margin-top:15px;
+}
+
+.welcome-title h2{
+	float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+
+}
+
+.welcome-title h3{
+	margin-top:22px;
+	padding:22px;
+}
+.welcome-con{
+	width:926px;
+	height:96px;
+	margin:0 auto;
+	line-height: 32px;
+    padding: 10px 20px;
+    border: 1px dashed #9ECCFE;
+    background: #FAFDFF;
+    box-shadow: 0 0 5px 5px #F3FAFF inset;
+    margin: 40px 0 30px;
+
+}
+
+.welcome-code{
+/*	border:1px solid black;
+*/	width:968px;
+	height:176px;
+	margin:0 auto;
+}
+
+.welcome-code li {
+    float: left;
+    width: 230px;
+    text-align: center;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.code-pic {
+    width: 124px;
+    height: 124px;
+    background: #fff;
+    margin: 0 auto;
+    border: 2px solid #D7EAFF;
+    display: block;
+}
+.code-pic img {
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.code-txt {
+    margin-top: 12px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.tips-box{
+	    border: 2px solid #ffddba;
+    background: #fffbf8;
+    width: 927px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 20px;
+    display: block;
+    margin-top: 30px;
+}
+
+.tips-box h2{
+	font-weight: 400;
+    font-size: 100%;
+    margin:0px;
+}
+
+.tips-box p {
+    margin-top: 4px;
+    line-height: 20px;
+    font-size: 12px;
+    margin:0px;
+}

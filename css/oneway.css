@@ -1,6 +1,6 @@
 #onewayContent{
-	border:1px solid blue;
-	width:1190px;
+/*	border:1px solid blue;
+*/	width:1190px;
 	height:620px;
 	margin:0 auto;
 	margin-top:10px;
@@ -19,8 +19,8 @@
 }
 
 .locationLeft{
-	border: 1px solid black;
-	height:48px;
+/*	border: 1px solid black;
+*/	height:48px;
 	width:10%;
 	float:left;
 	margin-top: 1%;
@@ -41,16 +41,16 @@
 }
 
 .locationInfoarea{
-	border:1px solid black;
-	height:50px;
-	width:801px;
+/*	border:1px solid black;
+*/	height:50px;
+	width:1018px;
 	margin-left: 4%;
     margin-right: 4%;
     margin-top: 1%;
 }
 
 #locationarea{
-	width:80%;
+	width:75%;
 	height:55%;
 }
 
@@ -58,16 +58,21 @@
 	margin:0 auto;
 }
 .locationInfoarea li{
-	border:1px solid black;
-	width:23%;
+/*	border:1px solid black;
+*/	width:24%;
 	list-style: none;
     height: 48px;
     float: left;
 }
 
+.locationInfoarea li span{
+	font-size:12px;
+	line-height: 30px
+}
+
 .locationRight{
-	border:1px solid black;
-	height:58px;
+/*	border:1px solid black;
+*/	height:58px;
 	width:25%;
 	margin-top: 0.5%;
 }
@@ -89,24 +94,29 @@
 }
 }
 #scheduleDate{
-	border:1px solid blue;
-	height:81px;
+/*	border:1px solid blue;
+*/	height:81px;
 	margin:0 auto;
 	margin-top:10px;
 	
 }
 
 #searchCheckbox{
-	border:1px solid blue;
-	height:35px;
+/*	border:1px solid blue;
+*/	height:35px;
 	margin:0 auto;
 	
 }
 
 #scheduleNav{
-	border:1px solid blue;
-	width:1188px;
+/*	border:1px solid blue;
+*/	width:1188px;
 	height:35px; 
 	margin:0 auto;
 
+}
+
+#train-content{
+/*	border:1px solid black;
+*/	height:70%;
 }

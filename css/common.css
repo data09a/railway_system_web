@@ -142,6 +142,7 @@ padding:0px;
    
 }
 #myInfo li{
+    margin-top:10px;
                 
 }
 
@@ -151,12 +152,22 @@ padding:0px;
     margin-top: -30px;
     margin-right: 30px;
     cursor:pointer;
+   
+}
+
+#login a{
+
+    text-decoration: none;
+    color:black;
+
 }
 
 #login:hover{
     display: block;
 
 }
+
+
 
 
 #navBar{
