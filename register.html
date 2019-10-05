@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Railway System</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+		<div id="headerBox">
+	<div id="header">
+		<div id="logo">
+			<a href="index.html">
+			<img src="images/logo.jpg">
+			</a>
+		</div>
+
+		<div id="rightbox">
+
+			<div id="search">
+				<input id="searchText" type="text" name="" placeholder="Search Ticket/Dining/Passengers/Rules">
+			</div>
+			<input id="submit" type="image" src="images/submit.png" alt="Submit">
+		    	
+		    <div id="profile">
+		    	<div id="myInfo">
+		    
+		    		<p><a href="personalcenter.html">My Profile |</a></p>
+		    		<ul>
+						<li>LIST ITEM 1</li>
+						<li>LIST ITEM 2</li>
+						<li>LIST ITEM 3</li>
+						<li border="1" style="border-style: dashed; color:#DEDEDF; border-width:1px;">
+							
+						</li>
+						<li>LIST ITEM 4</li>
+						<li>LIST ITEM 5</li>
+						<li>LIST ITEM 6</li>
+						<li border="1" style="border-style: dashed; color:#DEDEDF; border-width:1px;">
+							
+						</li>
+						<li>LIST ITEM 7</li>
+						<li>LIST ITEM 8</li>
+						<li border="1" style="border-style: dashed; color:#DEDEDF; border-width:1px;">
+					    </li>
+						<li>LIST ITEM 9</li>
+						<li>LIST ITEM 10</li>
+						<li border="1" style="border-style: dashed; color:#DEDEDF; border-width:1px;">
+					    </li>
+						<li>LIST ITEM 11</li>
+					</ul>			
+		    	</div>
+
+		       	<div id="login">
+		       		<a href="login.html">Login</a>
+		       		<a href="register.html">Register</a>
+		       	</div>
+
+		       	</div>
+
+		    </div>
+		</div>	
+	</div>
+	</div>
+
+	<div id="navBar">
+		<ul class="nav">
+  			<li style="background-color: #3685EC;">
+  				<a href="index.html">Home</a>
+  			</li>
+  			<li style="text-decoration:none;color:white;">
+  				<a href="oneway.html">Ticket</a>
+  			<li><a href="/group/">Group</a></li>    
+  			<li><a href="/membership/">Membership</a></li>
+  			<li>
+    			<a href="/stationService/">Station Service</a>
+  			</li>
+  			<li><a href="/businessClass/">Business Class</a></li>
+  			<li><a href="/tripGuide/">Trip Guide</a></li>
+  			<li><a href="/information/">Information</a></li>
+  		</ul>
+	</div>
+
+
+	<form id="registerForm" method="get" enctype="application/x-www-form-urlencoded">
+		<div class="layout-reg">
+			<div class="lay-hd">Account Information</div>
+			<div class="lay-bd">
+				<ul class="reg-list">
+					<li><div class="label">
+							<span class="required">*</span>
+							User Name：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="user name is not changable" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						    6-30 letter、number or “_”, start with letter
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							Password：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="6-20 letter, number or symbol" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="20" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+							<img src="images/password-label.png">
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							Confirm Password：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="input the password again" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							ID Type：
+					    </div>
+						<div class="r-txt"><input name="loginUserDTO.id_type_code" id="cardTypeCode" value="1" type="hidden">
+							<select class="w200sel valid" id="cardType">
+								<option value="I">Identification Card</option>
+								<option value="P">Passport</option>
+								<option value="M">Military ID</option>
+								<option value="S">Social Security</option>
+							</select>
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						    
+						</div>
+					</li>
+					<li id="jmsfz_li" style="height: 90px;"><div class="label"></div>
+						<div class="r-txt" style="width:165px;height:90px;">
+							<span style="display: block;float:left;">
+								<input name="idTypeRadio" type="radio" id="idTypeCode_second" class="radio" checked="checked" value="1">
+								<label for="idTypeCode_second" id="idTypeCode_second_label" class="cursor">
+									Identification Card
+								</label>
+							</span></br>
+							<span style="display: block;float:left;">
+								<input name="idTypeRadio" type="radio" id="idTypeCode_wgjzz" class="radio" value="H">
+								<label for="idTypeCode_wgjzz" id="idTypeCode_wgjzz_label" class="cursor">
+									Permanent Resident Card
+								</label>
+							</span>
+							<span style="display: block;float:left;">
+								<input name="idTypeRadio" type="radio" id="idTypeCode_gatjjz" class="radio" value="1">
+								<label for="idTypeCode_gatjjz" id="idTypeCode_gatjjz_label" class="cursor">
+									Foreign Passport
+								</label>
+							</span>
+						</div>
+					</li>
+
+					<li><div class="label">
+							<span class="required">*</span>
+							Full Name：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="please input the full name" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						    (Verification is required,please enter correctly!)
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							ID Number：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="please input the ID No." class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						    (Verification is required,please enter correctly!)
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							Email：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="input email address" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							Phone Number(+1)：
+					    </div>
+						<div class="r-txt"><input type="text" placeholder="input cellphone number" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						    (Verification is required,please enter correctly!)
+						</div>
+					</li>
+					<li><div class="label">
+							<span class="required">*</span>
+							Passenger：
+					    </div>
+						<div class="r-txt">
+							<select class="w200sel valid" id="passengerType" name="passenger_type">
+								<option value="1">Adult</option>
+								<option value="2">Children</option>
+								<option value="3">Student</option>
+								<option value="4">Veteran</option>
+							</select>
+						</div>
+						<div class="tips">
+							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							</span>
+						   
+						</div>
+
+						<li>
+							<div class="label" style="width:135px;">&nbsp;</div>
+							<div class="r-txt" style="width:55%">
+								<input type="checkbox" class="check" id="checkAgree">
+								<span style="font-size: 16px;">
+									<label for="checkAgree">I already read and agree</label>
+								</span>
+								<a href="/otn/regist/rule" class="ft14" target="_blank" shape="rect">
+								Website Service Term</a>
+								<a href="/otn/gonggao/privacyPolicy_web.html" class="ft14" target="_blank" shape="rect" style="margin-left:5px">Privacy Policy</a>
+							</div>
+						</li>
+					</li>
+				</ul>
+				<div class="lay-btn captchaButton " style="position:relative;" data-touclick-name="">
+					<a id="nextBtn" href="javascript:$.submitRegistGeneral();" class="btn122s" shape="rect" style=" color:#fff;">
+					Next Step
+				    </a>
+				</div>
+			</div>
+		</div>
+
+	</form>
+
+
+
+
+
+	<div id="otherLink">
+		<div id="leftLink">
+			<div id="picLink">
+				<p p style="margin-left:50px;">Other Link</p>
+				<ul>
+					<li> 
+						<img src="./images/link05.png">
+					</li>
+					<li>
+						<img src="./images/link04.png">
+					</li>
+			
+					<li>
+						<img src="./images/link03.png">
+					</li>
+					<li>
+						<img src="./images/link02.png">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="rightCode">
+			<ul>
+				<li>
+                    <h6>App Download is only available on this website!</h6>
+				</li>
+				<li>
+					<p>Facebook</p>
+					<img src="./images/code04.png">
+				</li>
+				<li>
+					<p>Twitter</p>
+					<img src="./images/code03.png">
+				</li>
+				<li>
+					<p>Website</p>
+					<img src="./images/code02.png">
+				</li>
+				<li>
+					<p>App</p>
+					<img src="./images/code01.png">
+				</li>
+			</ul>
+		</div>
+			
+	</div>
+
+
+		
+
+	<div id="footer">
+		<p>©2008-2019 Railway Corporation</p>
+             <p>01010101-3 | 101010</p>
+	</div>
+
+	
+	
+    
+
+</body>
+</html>
