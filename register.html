@@ -104,7 +104,7 @@
 							<span class="required">*</span>
 							Password：
 					    </div>
-						<div class="r-txt"><input type="text" placeholder="6-20 letter, number or symbol" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="20" style="color: rgb(51, 51, 51);">
+						<div class="r-txt"><input type="password" placeholder="6-20 letter, number or symbol" class="inptxt w200" name="loginUserDTO.user_name" id="passWord" maxlength="20" style="color: rgb(51, 51, 51);">
 						</div>
 						<div class="tips">
 							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
@@ -116,7 +116,7 @@
 							<span class="required">*</span>
 							Confirm Password：
 					    </div>
-						<div class="r-txt"><input type="text" placeholder="input the password again" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						<div class="r-txt"><input type="password" placeholder="input the password again" class="inptxt w200" name="loginUserDTO.user_name" id="confirmPassword" maxlength="30" style="color: rgb(51, 51, 51);">
 						</div>
 						<div class="tips">
 							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
@@ -141,7 +141,8 @@
 						    
 						</div>
 					</li>
-					<li id="jmsfz_li" style="height: 90px;"><div class="label"></div>
+					<li style="height: 90px;">
+						<div class="label"></div>
 						<div class="r-txt" style="width:165px;height:90px;">
 							<span style="display: block;float:left;">
 								<input name="idTypeRadio" type="radio" id="idTypeCode_second" class="radio" checked="checked" value="1">
@@ -243,8 +244,8 @@
 						</li>
 					</li>
 				</ul>
-				<div class="lay-btn captchaButton " style="position:relative;" data-touclick-name="">
-					<a id="nextBtn" href="javascript:$.submitRegistGeneral();" class="btn122s" shape="rect" style=" color:#fff;">
+				<div class="nextBtn " style="position:relative;" data-touclick-name="">
+					<a id="nextBtn" style=" color:#fff;">
 					Next Step
 				    </a>
 				</div>
@@ -316,7 +317,7 @@
 
 	
 	
-    
-
+<script src="js/register.js"></script>
+  
 </body>
 </html>
