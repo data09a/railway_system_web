@@ -27,6 +27,7 @@ loginButton.onclick = function(){
 
 	if(inputUser==saveJSONObj.user&&inputPassword==saveJSONObj.pwd){
 		alert('It is correct');
+		window.location.href="personalcenter.html";
 	}else{
 		alert('username or password is incorrect!');
 	}

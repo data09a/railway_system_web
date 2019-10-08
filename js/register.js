@@ -31,6 +31,6 @@ registerBtn.onclick	= function(){
     window.localStorage.setItem('userObj', JSONObj);
     alert('You are registered!');
 
-	window.location.href ="login.html"
+	window.location.href ="login.html";
 
 }
