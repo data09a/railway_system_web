@@ -16,17 +16,24 @@ registerBtn.onclick	= function(){
 	// window.sessionStorage.setItem('acc', getUser);
 	// window.sessionStorage.setItem('pass', getPass);
 
-	//object
+	//  make it object and put it in an array
 
 	var obj ={
-		user: getUser,
-		pwd: getPass
+		user:getUser,
+		pwd:getPass
 	};
 
+	if(window.localStorage.getItem('userObj') == null){
+		var inputArr =[];
+	}else{
+		var inputArr =JSON.parse(window.localStorage.getItem('userObj'));
+    }
+
+	inputArr.push(obj)
 
 	// using json change object to. json format string
 
-	var JSONObj = JSON.stringify(obj);
+	var JSONObj = JSON.stringify(inputArr);
 	console.log(JSONObj);
     window.localStorage.setItem('userObj', JSONObj);
     alert('You are registered!');

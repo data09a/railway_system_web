@@ -23,10 +23,17 @@ loginButton.onclick = function(){
 	var saveObj = window.localStorage.getItem('userObj');
 	var saveJSONObj =JSON.parse(saveObj);
 	console.log(saveJSONObj);
+	var flag =1;
+	for(var i = 0; i<saveJSONObj.length; i++){
+		if(inputUser==saveJSONObj[i].user && inputPassword==saveJSONObj[i].pwd){
+           flag = 0
+		}
+	}
 
 
-	if(inputUser==saveJSONObj.user&&inputPassword==saveJSONObj.pwd){
-		alert('It is correct');
+	if(flag == 0){
+		alert('Login Successfully!');
+		window.localStorage.setItem('currentUser', inputUser);
 		window.location.href="personalcenter.html";
 	}else{
 		alert('username or password is incorrect!');
