@@ -29,15 +29,23 @@ registerBtn.onclick	= function(){
 		var inputArr =JSON.parse(window.localStorage.getItem('userObj'));
     }
 
-	inputArr.push(obj)
+    var userExists =false;
+    for (var i = 0;  i<inputArr.length; i++){
+    	if (inputArr[i].user === getUser) {
+    		userExists = true;
+    	}
+    }
+ 
+    if (userExists == true) {
+        alert('User name'+' ' + getUser + ' '+ 'already exist.');
+    } else{
+    	inputArr.push(obj);
+    	var JSONObj = JSON.stringify(inputArr);
+		console.log(JSONObj);
+    	window.localStorage.setItem('userObj', JSONObj);
+    	alert('You are registered!');
+    	window.location.href ="login.html";
 
-	// using json change object to. json format string
-
-	var JSONObj = JSON.stringify(inputArr);
-	console.log(JSONObj);
-    window.localStorage.setItem('userObj', JSONObj);
-    alert('You are registered!');
-
-	window.location.href ="login.html";
-
+    }
 }
+	
