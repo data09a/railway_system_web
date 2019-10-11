@@ -62,6 +62,14 @@
 
 }
 
+.hint{
+    display: inline-block;
+    width: 180px;
+    height: 25px;
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 13%;
+}
 .r-txt a{
 	color: #07f;
     text-decoration: none;
