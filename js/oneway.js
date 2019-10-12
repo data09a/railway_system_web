@@ -7,6 +7,21 @@ var objectBody =document.getElementById('myTbody');
 	var traArr5 = ['D1905','NY','NJ','PHILA','DC','$120']
 	var traArr6 = ['D1906','DC','PHILA','NJ','NY','$120']
 	var allTraArr =[traArr1, traArr2, traArr3, traArr4, traArr5, traArr6];
+
+
+	var delBtn = document.getElementById('delBtn');
+  		delBtn.onclick = function() {
+       	var traNum = prompt('Please enter the train number to delete.(It is case sensitive)');
+       	for (var i=0; i<allTraArr.length;i++){
+            if (allTraArr[i][0] == traNum) {
+               allTraArr.splice(i, 1);
+            }
+        }
+        typeWay(allTraArr);
+        }
+
+     
+
 	// get element from he page and install click button
 	var oBtn = document.getElementById('addBtn');
 	oBtn.onclick = function(){

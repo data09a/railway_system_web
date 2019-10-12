@@ -1,7 +1,12 @@
-// alert(1);
 
-var saveUser = window.localStorage.getItem('acc');
-var savePass = window.localStorage.getItem('pass');
+var currentUser = window.localStorage.getItem('currentUser')
+
+if(currentUser != null){
+	window.location ="personalcenter.html";
+}
+
+var saveUser = window.localStorage.getItem('acc_020a');
+var savePass = window.localStorage.getItem('pass_020a');
 console.log(saveUser);
 
 
@@ -20,7 +25,7 @@ loginButton.onclick = function(){
 	console.log(inputPassword);
 
 
-	var saveObj = window.localStorage.getItem('userObj');
+	var saveObj = window.localStorage.getItem('userObj_020a');
 	var saveJSONObj =JSON.parse(saveObj);
 	console.log(saveJSONObj);
 	var flag =1;

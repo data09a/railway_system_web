@@ -5,7 +5,7 @@
 
          oText.onkeyup = function(){
          	var inputUser =oText.value;
-         	var reg =/^[0-9]{4}[A-z]{4}$/;
+         	var reg =/^[A-z]{4}[0-9]{4}$/;
          	if (inputUser.match(reg) == null){
          		console.log('It does not match the requirements');
          		oText.nextElementSibling.innerHTML ='Please use 4 number&4 letter';
