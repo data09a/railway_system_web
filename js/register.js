@@ -1,23 +1,19 @@
-	var oText = document.getElementById('userName');
-		// oText.onkeydown = function(){
-  //            console.log('I enter a key');
-  //        }
+var oText = document.getElementById('userName');
 
-         oText.onkeyup = function(){
-         	var inputUser =oText.value;
-         	var reg =/^[A-z]{4}[0-9]{4}$/;
-         	if (inputUser.match(reg) == null){
-         		console.log('It does not match the requirements');
-         		oText.nextElementSibling.innerHTML ='Please use 4 number&4 letter';
-         		oText.nextElementSibling.style.color ="red";
 
-         	}else{
-         		console.log('the input is correct');    
-         		oText.nextElementSibling.innerHTML ='√';
-         		oText.nextElementSibling.style.color ='green';    		
-
-         	}
-         }
+oText.onkeyup = function(){
+    var inputUser =oText.value;
+    var userRegex = /^.*(?=.{8,30})(?=.*[a-zA-Z])(?=.*\d)(?=.*[_]).*$/;
+    var validUserName = userRegex.test(getUser);
+        if (validUserName == false) {
+            alert("You have entered a bad username");
+        return;
+}else{
+        console.log('the input is correct');    
+        oText.nextElementSibling.innerHTML ='√';
+        oText.nextElementSibling.style.color ='green';
+    
+}
 
 
 
@@ -32,13 +28,18 @@ registerBtn.onclick	= function(){
 	var getUser = userBox.value;
 	var getPass = passBox.value;
 
- //    // permanent storage
-	// window.localStorage.setItem('acc',getUser);
-	// window.localStorage.setItem('pass', getPass);
+    var userRegex = /^.*(?=.{6,30})(?=.*[a-zA-Z])(?=.*\d)(?=.*[_]).*$/;
+    var validUserName = passwordRegex.test(getPass);
+    console.log(validUserName);
 
-     //temporary storage
-	// window.sessionStorage.setItem('acc', getUser);
-	// window.sessionStorage.setItem('pass', getPass);
+    var passwordRegex = /^.*(?=.{6,20})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&? \"]).*$/;
+    var validPassword = passwordRegex.test(getPass);
+    console.log(validPassword);
+
+
+
+
+ 
 
 	//  make it object and put it in an array
 
