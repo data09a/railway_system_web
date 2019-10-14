@@ -1,9 +1,19 @@
+// alert(1);
 
-var currentUser = window.localStorage.getItem('currentUser')
+function veriCode(){
+    var str = '0123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm'
 
-if(currentUser != null){
-	window.location ="personalcenter.html";
-}
+    var box ='';
+ for(var i= 0; i<4; i++){
+     var randomNo = parseInt(Math.random()*str.length);
+
+     box+= str[randomNo];
+    }
+     console.log(box);
+     document.getElementById('veriCode').innerHTML = box;
+
+                
+}   veriCode();
 
 var saveUser = window.localStorage.getItem('acc_020a');
 var savePass = window.localStorage.getItem('pass_020a');
@@ -28,6 +38,21 @@ loginButton.onclick = function(){
 	var saveObj = window.localStorage.getItem('userObj_020a');
 	var saveJSONObj =JSON.parse(saveObj);
 	console.log(saveJSONObj);
+
+	var inPut = document.getElementById('veriBox').value;
+  	var box   = document.getElementById('veriCode').innerHTML;
+
+   	var newInput = inPut.toUpperCase();
+   	var newBox = box.toUpperCase();
+   	console.log(newInput);
+   	console.log(newBox);
+
+
+   	if(newInput != newBox){
+       alert('The verification code does not match');
+       return;
+   	}
+
 	var flag =1;
 	for(var i = 0; i<saveJSONObj.length; i++){
 		if(inputUser==saveJSONObj[i].user && inputPassword==saveJSONObj[i].pwd){
@@ -41,9 +66,18 @@ loginButton.onclick = function(){
 		window.localStorage.setItem('currentUser', inputUser);
 		window.location.href="personalcenter.html";
 	}else{
-		alert('username or password is incorrect!');
+		alert('Username or password does not match.');
 	}
 
 }
+
+
+
+
+
+             
+
+
+		
 
 

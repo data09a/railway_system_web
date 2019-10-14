@@ -83,16 +83,19 @@
 	</div>
 
 
-	<form id="registerForm" method="get" enctype="application/x-www-form-urlencoded">
+	<form id="registerForm" method="get">
 		<div class="layout-reg">
 			<div class="lay-hd">Account Information</div>
 			<div class="lay-bd">
 				<ul class="reg-list">
-					<li><div class="label">
+					<li>
+						<div class="label">
 							<span class="required">*</span>
 							User Name：
 					    </div>
-						<div class="r-txt"><input type="text"  placeholder="6-30 letters,numbers or_" class="inptxt w200" name="" id="userName" maxlength="30" style="color: rgb(51, 51, 51);"><span class="hint"></span>
+						<div class="r-txt">
+							<input type="text"  placeholder="4 letters then 4 numbers" class="inptxt_w200" name="" id="userName" maxlength="30">
+							<span class="hint"></span>
 						</div>
 
 					</li>
@@ -101,35 +104,35 @@
 							<span class="required">*</span>
 							Password：
 					    </div>
-						<div class="r-txt"><input type="password" placeholder="6-20 letter, number or symbol" class="inptxt w200" name="" id="passWord" maxlength="20" style="color: rgb(51, 51, 51);">
+						<div class="r-txt">
+							<input type="password" placeholder="6-20 letter, number or symbol" class="inptxt_w200" name="" id="passWord" maxlength="8">
+							<span class="hint"></span>
 						</div>
-						<div class="tips">
-							<span style="margin-top: 10px;margin-right: 5px;display:none;"></span>
-							<img src="images/password-label.png">
-						</div>
+						
 					</li>
-					<li><div class="label">
+					<li>
+						<div class="label">
 							<span class="required">*</span>
 							Confirm Password：
 					    </div>
-						<div class="r-txt"><input type="password" placeholder="input the password again" class="inptxt w200" name="" id="confirmPassword" maxlength="20" style="color: rgb(51, 51, 51);">
+						<div class="r-txt">
+							<input type="password" placeholder="input the password again" class="inptxt_w200" name="" id="confirmPassword" maxlength="8">
+							<span class="hint"></span>
 						</div>
-						<div class="tips">
-							<span style="margin-top: 10px;margin-right: 5px;display:none;">
-							</span>
-						</div>
+						
 					</li>
 					<li>
 						<div class="label">
 							<span class="required">*</span>
 							ID Type：
 					    </div>
-						<div class="r-txt"><input name="" id="cardTypeCode" value="1" type="hidden">
-							<select class="w200sel valid" id="cardType">
-								<option value="I">Identification Card</option>
-								<option value="P">Passport</option>
-								<option value="M">Military ID</option>
-								<option value="S">Social Security</option>
+						<div class="r-txt">
+							<input name="" value="1" type="hidden">
+							<select class="w200sel valid">
+								<option>Identification Card</option>
+								<option>Passport</option>
+								<option>Military ID</option>
+								<option>Social Security</option>
 							</select>
 						</div>
 						<div class="tips">
@@ -142,20 +145,20 @@
 						<div class="label"></div>
 						<div class="r-txt" style="width:165px;height:90px;">
 							<span style="display: block;float:left;">
-								<input name="idTypeRadio" type="radio" id="idTypeCode_second" class="radio" checked="checked" value="1">
-								<label for="idTypeCode_second" id="idTypeCode_second_label" class="cursor">
+								<input name="" type="radio" checked="checked">
+								<label>
 									Identification Card
 								</label>
 							</span></br>
 							<span style="display: block;float:left;">
-								<input name="idTypeRadio" type="radio" id="idTypeCode_wgjzz" class="radio" value="H">
-								<label for="idTypeCode_wgjzz" id="idTypeCode_wgjzz_label" class="cursor">
+								<input name="" type="radio" >
+								<label>
 									Permanent Resident Card
 								</label>
 							</span>
 							<span style="display: block;float:left;">
-								<input name="idTypeRadio" type="radio" id="idTypeCode_gatjjz" class="radio" value="1">
-								<label for="idTypeCode_gatjjz" id="idTypeCode_gatjjz_label" class="cursor">
+								<input name="" type="radio">
+								<label>
 									Foreign Passport
 								</label>
 							</span>
@@ -167,7 +170,7 @@
 							<span class="required">*</span>
 							Full Name：
 					    </div>
-						<div class="r-txt"><input type="text" placeholder="please input the full name" class="inptxt w200" style="color: rgb(51, 51, 51);">
+						<div class="r-txt"><input type="text" placeholder="please input the full name" class="inptxt_w200">
 						</div>
 						<div class="tips">
 							<span style="margin-top: 10px;margin-right: 5px;display:none;">
@@ -179,7 +182,7 @@
 							<span class="required">*</span>
 							ID Number：
 					    </div>
-						<div class="r-txt"><input type="text" placeholder="please input the ID No." class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						<div class="r-txt"><input type="text" placeholder="please input the ID No." class="inptxt_w200" name="" id="userName" maxlength="30">
 						</div>
 						<div class="tips">
 							<span style="margin-top: 10px;margin-right: 5px;display:none;">
@@ -191,7 +194,7 @@
 							<span class="required">*</span>
 							Email：
 					    </div>
-						<div class="r-txt"><input type="text" placeholder="input email address" class="inptxt w200" name="loginUserDTO.user_name" id="userName" maxlength="30" style="color: rgb(51, 51, 51);">
+						<div class="r-txt"><input type="text" placeholder="input email address" class="inptxt_w200" name="" id="userName" maxlength="30">
 						</div>
 						<div class="tips">
 							<span style="margin-top: 10px;margin-right: 5px;display:none;">
@@ -202,10 +205,10 @@
 							<span class="required">*</span>
 							Phone Number(+1)：
 					    </div>
-						<div class="r-txt"><input type="text" placeholder="input cellphone number" class="inptxt w200" name="" id="" maxlength="10" style="color: rgb(51, 51, 51);">
+						<div class="r-txt"><input type="text" placeholder="input cellphone number" class="inptxt_w200" name="" id="" maxlength="10">
 						</div>
 						<div class="tips">
-							<span id="iok_userName" class="tips i-ok" style="margin-top: 10px;margin-right: 5px;display:none;">
+							<span style="margin-top: 10px;margin-right: 5px;display:none;">
 							</span>
 						    (Verification is required,please enter correctly!)
 						</div>
@@ -231,18 +234,18 @@
 						<li>
 							<div class="label" style="width:135px;">&nbsp;</div>
 							<div class="r-txt" style="width:55%">
-								<input type="checkbox" class="check" id="checkAgree">
+								<input type="checkbox">
 								<span style="font-size: 16px;">
-									<label for="checkAgree">I already read and agree</label>
+									<label>I already read and agree</label>
 								</span>
-								<a href="/" class="ft14" target="_blank" shape="rect">
+								<a href="/" target="_blank">
 								Website Service Term</a>
-								<a href="/" class="ft14" target="_blank" shape="rect" style="margin-left:5px">Privacy Policy</a>
+								<a href="/" class="ft14" target="_blank" style="margin-left:5px">Privacy Policy</a>
 							</div>
 						</li>
 					</li>
 				</ul>
-				<div class="nextBtn " style="position:relative;" data-touclick-name="">
+				<div class="nextBtn" style="position:relative;">
 					<a id="nextBtn" style=" color:#fff;">
 					Next Step
 				    </a>
