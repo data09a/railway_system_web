@@ -1,5 +1,7 @@
 // alert(1);
 
+
+
 function veriCode(){
     var str = '0123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm'
 
@@ -71,6 +73,12 @@ loginButton.onclick = function(){
 
 }
 
+
+var currentUser = window.localStorage.getItem('currentUser');
+
+if (currentUser != null){
+	window.location = "personalcenter.html";
+}
 
 
 

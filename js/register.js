@@ -67,6 +67,21 @@ function confirmMatch(inputPassword, inputConfirm){
       
 }
 
+var checkBox = document.getElementById('agreement')
+checkBox.onclick = function(){
+    var clickAgree = checkBox.checked;
+    if(clickAgree == true){
+        console.log('true');
+    }else{
+        return;
+    }
+
+}
+
+function checkMatch(clickAgree){
+    return clickAgree == true;
+}
+
 
 
 
@@ -76,11 +91,13 @@ registerBtn.onclick	= function(){
 	var userBox = document.getElementById('userName');
 	var passBox = document.getElementById('passWord');
     var confirmBox = document.getElementById('confirmPassword');
+    var agreeBox = document.getElementById('agreement');
 
 
 	var getUser = userBox.value;
 	var getPass = passBox.value;
     var getConfirm = confirmBox.value;
+    var getAgree = agreeBox.checked;
 
 
 if (userMatch(getUser) == null){
@@ -96,6 +113,12 @@ if(passMatch(getPass) == null){
 if(confirmMatch(getPass, getConfirm) == false){
     alert('Password does not match');
     return;
+}
+
+if(checkMatch(getAgree) == false){
+    alert('Please check the agreement');
+    return;
+
 }
 
 
